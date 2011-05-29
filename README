@@ -1,6 +1,11 @@
-Compile with:
-
-gcc -std=c99 -Wall -Wextra -pedantic -D_POSIX_C_SOURCE=200112L -o chktcpport chktcpport.c
-
 A tiny tool I threw together in a couple of minutes at a friend's
 request. Reportedly works under HP-UX 11.
+
+Usage:
+
+    ./chktcpport <REMOTE_HOST> <REMOTE_PORT> <TIMEOUT_IN_SECS>
+
+E.g.:
+
+    ./chktcpport github.com 80 5 && echo 'Port open.'
+
