@@ -9,3 +9,6 @@ E.g.:
 
     ./chktcpport github.com 80 5 && echo 'Port open.'
 
+test.sh is an example of using this for scripting. It will test all
+the combinations of two hostnames, "github.com" and "localhost", and the
+following ports - 21, 22, 25, 80, 81, 443, 7777 and 12345.
